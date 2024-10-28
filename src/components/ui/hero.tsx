@@ -8,7 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import { AspectRatio } from "./aspect-ratio"
 
 export default function Hero() {
     return (
