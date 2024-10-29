@@ -1,4 +1,3 @@
-import Hero from "@/components/ui/hero"
 import { AspectRatio } from "@radix-ui/react-aspect-ratio"
 import * as React from "react"
 

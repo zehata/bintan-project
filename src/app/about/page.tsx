@@ -1,4 +1,3 @@
-import Hero from "@/components/ui/hero"
 import * as React from "react"
 
 export default function Home() {

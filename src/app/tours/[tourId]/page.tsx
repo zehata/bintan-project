@@ -12,7 +12,7 @@ import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
-export default function ViewTour({params}:{params:{tourId:string}}) {
+export default function ViewTour() {
   const [date, setDate] = React.useState<Date>()
 
   return (
@@ -21,7 +21,7 @@ export default function ViewTour({params}:{params:{tourId:string}}) {
 
       <div className="gallery flex-row flex-wrap gap-4 md:columns-3">
         {Array.from({length: 6}).map((_, index) => (
-          <img className="mb-4" src={`/${index}.png`}></img>
+          <img key={index} className="mb-4" src={`/${index}.png`}></img>
         ))}
       </div>
 
