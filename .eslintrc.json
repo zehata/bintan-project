@@ -1,3 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@next/next/no-img-element": "off" // As of Oct 2024, Next.js Image does not handle dynamic image dimensions well, requiring width and height to be explicitly provided. Remove when this restriction has been fixed. See https://www.reddit.com/r/nextjs/comments/vhujbf/comment/id9qntd
+  }
 }

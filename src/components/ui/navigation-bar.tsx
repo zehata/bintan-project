@@ -10,7 +10,6 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import Image from "next/image"
 
 export function NavigationMenuComponent() {
   return (
@@ -22,7 +21,7 @@ export function NavigationMenuComponent() {
           <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink>
-                  <Image src="/logo.png" alt="" width={513} height={174} className="h-20 w-auto p-1 pb-2"/>
+                  <img src="/logo.png" alt="" className="h-20 w-auto p-1 pb-2"/>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -48,9 +47,16 @@ export function NavigationMenuComponent() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
+              <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Contact Us
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About Us
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

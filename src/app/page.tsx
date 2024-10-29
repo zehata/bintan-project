@@ -8,7 +8,7 @@ export default function Home() {
       <div className="p-24 flex justify-center items-center">
         <div className="w-3/4">
           <div className="text-7xl font-bold p-4 pl-0">Bintan Island.</div>
-          <div className="text-xl">
+          <div className="text-2xl">
             <div className="p-4 pl-0">
               {`Bintan Island or Negeri Segantang Lada is an island in the Riau archipelago of Indonesia. It is part of the Riau Islands province, the capital of which, Tanjung Pinang, lies in the island's south and is the island's main community.`}
             </div>

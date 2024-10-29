@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from "next/image"
 
 export default function Hero() {
     return (
@@ -19,15 +18,15 @@ export default function Hero() {
                 <div className="w-full h-full">
                     <Card className="rounded-none w-full h-full">
                         <CardContent className="p-0 w-full h-full">
-                            <Image src={`/${index}.png`} alt="" width={672} height={378} className="h-full w-full"/>
+                            <img src={`/${index}.png`} alt="" className="h-full w-full"/>
                         </CardContent>
                     </Card>
                 </div>
                 </CarouselItem>
             ))}
             </CarouselContent>
-            <CarouselPrevious className="translate-x-20 size-20" />
-            <CarouselNext className="-translate-x-20 size-20" />
+            <CarouselPrevious className="translate-x-20 scale-150" />
+            <CarouselNext className="-translate-x-20 scale-150" />
         </Carousel>
         </div>
     )
